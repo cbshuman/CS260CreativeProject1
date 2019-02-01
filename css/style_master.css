@@ -51,6 +51,11 @@ h2
 	font-size:1.75em; !important;
 	}
 
+header img
+	{
+	height:50%;
+	}
+
 p
 	{
 	font-family: "Times New Roman";
