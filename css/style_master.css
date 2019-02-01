@@ -16,10 +16,27 @@
 	background-color: #445;
 	color: #fffbed;
 	margin-top:0;
-	padding:2%;
-	height: 100%;
+	margin-bottom:4em;
+	padding:1%;
 	border-bottom: .5em solid #334;
 	border-radius: 15px;
+	}
+
+.contentColumns
+	{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	}
+
+.contentColumns img
+	{
+	width: 100%;
+	border-radius:5px
+	}
+
+.contentColumn
+	{
+	margin:2%;
 	}
 
 .sidebars
@@ -27,21 +44,36 @@
 	font-variant: small-caps; !important;
 	font-family: "Times New Roman";
  	word-wrap: break-word;
-	animation-name: example;
-	animation-duration: 1s;
+
+	animation-name: sidebarAnimation;
+	animation-duration: 3s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate-reverse;
 	}
 
-@keyframes example
+.footer
 	{
-	from {color: black;}
-	to {color: 111;}
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #445;
+	height:60px;
+	}
+
+a
+	{
+	color:#fffbed;
+	}
+
+a:hover
+	{
+	color:#cccbed;
 	}
 
 body
 	{
 	background-color: black;
+	margin-bottom: 60px;
 	}
 
 h2
@@ -51,12 +83,24 @@ h2
 	font-size:1.75em; !important;
 	}
 
-header img
+html
 	{
-	height:50%;
+  	position: relative;
+  	min-height: 100%;
+	}
+
+nav img
+	{
+	width:2em;
 	}
 
 p
 	{
 	font-family: "Times New Roman";
+	}
+
+@keyframes sidebarAnimation
+	{
+	from {color: black;}
+	to {color: 111;}
 	}
